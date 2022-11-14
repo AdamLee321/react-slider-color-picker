@@ -67,9 +67,9 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     margin: 0,
     padding: 0,
     font: '1em/1 arial, sans-serif',
+    backgroundColor: 'transparent',
     
     '&::-webkit-slider-runnable-track': track,
-    backgroundColor: 'transparent',
     '&::-moz-range-track': track,
     '&::-ms-track': track,
     '&::-webkit-slider-thumb': {
@@ -103,6 +103,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
       onTouchStart={handleTouchStart}
       css={inputStyle}
       value={props.value}
+      style={props.style}
       disabled={props.disabled}
     />
   )
