@@ -67,7 +67,6 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     margin: 0,
     padding: 0,
     font: '1em/1 arial, sans-serif',
-    backgroundColor: 'transparent',
     
     '&::-webkit-slider-runnable-track': track,
     '&::-moz-range-track': track,
@@ -93,6 +92,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     '&::-moz-range-thumb': thumb,
     '&::-ms-thumb': { marginTop: 0, ...thumb },
     '&::-ms-tooltip': { display: 'none' },
+    backgroundColor: 'transparent',
   })
 
   return (
