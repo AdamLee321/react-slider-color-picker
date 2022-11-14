@@ -57,7 +57,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     height: `${trackHeight}em`,
     borderRadius: `${trackHeight / 2}em`,
     background: `${props.disabled ? '#ddd' : props.trackBackground}`,
-    backgroundColor: 'transparent',
+    backgroundColor: 'black',
   }
 
   const inputStyle = css({
@@ -103,7 +103,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
       onTouchStart={handleTouchStart}
       css={inputStyle}
       value={props.value}
-      style={{backgroundColor: 'transparent'}
+      style={{backgroundColor: 'black'}}
       disabled={props.disabled}
     />
   )
