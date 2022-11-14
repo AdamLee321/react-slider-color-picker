@@ -68,7 +68,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     padding: 0,
     background: '#000',
     font: '1em/1 arial, sans-serif',
-    
+
     '&::-webkit-slider-runnable-track': track,
     '&::-moz-range-track': track,
     '&::-ms-track': track,
@@ -96,7 +96,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
   })
 
   return (
-    <div style={{padding: 20, backgroundColor: 'blue'}}>
+    <div style={{ padding: 20, backgroundColor: 'blue' }}>
       <input
         type="range"
         onChange={handleChange}
@@ -106,6 +106,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
         value={props.value}
         disabled={props.disabled}
       />
+      <p>TEST</p>
     </div>
   )
 }
