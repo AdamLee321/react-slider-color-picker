@@ -68,6 +68,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     margin: 0,
     padding: 0,
     font: '1em/1 arial, sans-serif',
+    background: '#000',
     
     '&::-webkit-slider-runnable-track': track,
     '&::-moz-range-track': track,
