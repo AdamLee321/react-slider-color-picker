@@ -96,6 +96,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
   })
 
   return (
+    <div style={{padding: 20, backgroundColor: 'blue'}}>
     <input
       type="range"
       onChange={handleChange}
@@ -105,6 +106,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
       value={props.value}
       disabled={props.disabled}
     />
+    </div>
   )
 }
 
