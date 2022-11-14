@@ -103,7 +103,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
       onTouchStart={handleTouchStart}
       css={inputStyle}
       value={props.value}
-      style={props.style}
+      style={{backgroundColor: 'transparent'}
       disabled={props.disabled}
     />
   )
