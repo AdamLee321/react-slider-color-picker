@@ -57,7 +57,6 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     height: `${trackHeight}em`,
     borderRadius: `${trackHeight / 2}em`,
     background: `${props.disabled ? '#ddd' : props.trackBackground}`,
-    backgroundColor: 'black',
   }
 
   const inputStyle = css({
@@ -67,8 +66,8 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     height: `${thumbDiameterBig + 0.65}em`,
     margin: 0,
     padding: 0,
+    background: 'black',
     font: '1em/1 arial, sans-serif',
-    background: '#000',
     
     '&::-webkit-slider-runnable-track': track,
     '&::-moz-range-track': track,
@@ -104,7 +103,6 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
       onTouchStart={handleTouchStart}
       css={inputStyle}
       value={props.value}
-      style={{backgroundColor: 'black'}}
       disabled={props.disabled}
     />
   )
