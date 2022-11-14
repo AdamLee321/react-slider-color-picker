@@ -57,6 +57,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     height: `${trackHeight}em`,
     borderRadius: `${trackHeight / 2}em`,
     background: `${props.disabled ? '#ddd' : props.trackBackground}`,
+    backgroundColor: 'transparent',
   }
 
   const inputStyle = css({
@@ -92,7 +93,6 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     '&::-moz-range-thumb': thumb,
     '&::-ms-thumb': { marginTop: 0, ...thumb },
     '&::-ms-tooltip': { display: 'none' },
-    backgroundColor: 'transparent',
   })
 
   return (
