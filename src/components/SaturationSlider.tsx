@@ -22,7 +22,6 @@ export const SaturationSlider: FC<ReactSliderColorPickerProps> = (props): ReactE
       thumbBackground={`hsl(${props.color.h}, ${props.color.s}%, 50%)`}
       trackBackground={`linear-gradient(to right, hsl(${props.color.h}, 0%, 50%),  hsl(${props.color.h}, 100%, 50%))`}
       value={props.color.s}
-      style={props.style}
       handleMoveSlider={handleMoveSlider}
     />
   )
