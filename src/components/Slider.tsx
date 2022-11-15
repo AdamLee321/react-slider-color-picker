@@ -96,18 +96,15 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
   })
 
   return (
-    <div style={{ padding: 20, backgroundColor: 'blue' }}>
-      <input
-        type="range"
-        onChange={handleChange}
-        onTouchEnd={handleTouchEnd}
-        onTouchStart={handleTouchStart}
-        css={inputStyle}
-        value={props.value}
-        disabled={props.disabled}
-      />
-      <p style={{ color: 'white' }}>TEST</p>
-    </div>
+    <input
+      type="range"
+      onChange={handleChange}
+      onTouchEnd={handleTouchEnd}
+      onTouchStart={handleTouchStart}
+      css={inputStyle}
+      value={props.value}
+      disabled={props.disabled}
+    />
   )
 }
 
