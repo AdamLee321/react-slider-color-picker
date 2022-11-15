@@ -106,7 +106,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
         value={props.value}
         disabled={props.disabled}
       />
-      <p>TEST</p>
+      <p style={{ color: 'white' }}>TEST</p>
     </div>
   )
 }
