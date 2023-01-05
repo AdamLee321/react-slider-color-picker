@@ -66,7 +66,7 @@ const Slider: FC<SliderProps> = (props): ReactElement => {
     height: `${thumbDiameterBig + 0.65}em`,
     margin: 0,
     padding: 0,
-    background: '#000',
+    background: 'transparent',
     font: '1em/1 arial, sans-serif',
 
     '&::-webkit-slider-runnable-track': track,
