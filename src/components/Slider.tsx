@@ -11,8 +11,8 @@ interface SliderProps {
 }
 
 const trackHeight = 0.88
-const thumbDiameterSmall = 1.4
-const thumbDiameterBig = 1.6
+const thumbDiameterSmall = 1.8
+const thumbDiameterBig = 2.0
 
 const Slider: FC<SliderProps> = (props): ReactElement => {
   // This variable is used to make the mobile version work correctly.
